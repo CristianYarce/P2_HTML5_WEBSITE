@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truvy Salon and Spa</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@100&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+            crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+ 
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo">Truvy Salon and Spa</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About Us</a>
+          </li>
+          <li>
+            <a href="services.html" class="nav-links">Services</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container">
+        <section class="sections">
+          <img class="my-image" src="images/girl.jpg" alt="girl" />
+
+          <h2>Services</h2><br>
+
+          <section class="container-info">
+              <img src="images/haircut.jpg" alt="Hair Cuts & Style" width="100" height="100"/>
+              <h3>Hair Cuts & Style</h3>
+              <p>$20 - $80</p><br>
+              <p>Starts at $20. Includes scalp massage, cut, shampoo and style. Start with this!
+              </p>
+              </section>
+
+          <section class="container-info">
+              <img src="images/color.jpg" alt="Color" width="100" height="100"/>
+              <h3>Color</h3>
+              <p>$200 - $500</p><br>
+              <p>Starts at $200. Re-touch of new growth, shampoo and blowdry. Very recommended!
+              </p>
+          </section>
+
+          <section class="container-info">
+            <img src="images/texture.jpg" alt="texture" width="100" height="100"/>
+            <h3>Texture</h3>
+            <p>$200 - $500</p><br>
+            <p>Starts at $200. Improves the condition of the hair by creating a protective layer.
+            </p>
+        </section>
+
+          <section id="about" class="about1">
+            <h2>Just remember:</h2>
+            
+            <!-- COLLAPSIBLE-->
+            <button type="button" class="collapsible">Open this...</button>
+            <div class="content">
+              <p>We are a certified stylist for z.one concept® hair products. The high quality z.one beauty product line allows our customers to reproduce their hairstyles at home.
+              </p>
+              <br>
+              <h1>Follow us on Facebook</h1>
+              <br>
+              <div class="fb-page"
+              data-href="https://www.facebook.com/truvysalonandspa" 
+              data-width="340"
+              data-hide-cover="false"
+              data-show-facepile="true"></div>
+            </div>
+          </section>
+      </div>
+    </main>
+
+  </body>
+
+  <footer>
+    <section>
+      <div class="left-half">
+        <p>Truvy Salon and Spa<br>
+          8908 4th St. N., STE. B<br>
+          St. Petersburg, FL 33702 
+      </p>
+      </div>
+
+      <div class="right-half">
+        <p>
+          HOURS:<br>
+          Tues - Thur, 10am - 6pm<br>
+          Fri & Sat, 10am - 4pm
+        </p>
+      </div>
+      <P>Design by: Cristian Yarce</P>
+    </section>
+  </footer>
+<!-- Javascript -->
+<script id="rendered-js" >
+  let mainNav = document.getElementById("js-menu");
+  let navBarToggle = document.getElementById("js-navbar-toggle");
+  
+  navBarToggle.addEventListener("click", function () {
+    mainNav.classList.toggle("active");
+  });
+  //# sourceURL=pen.js
+  </script>
+
+<!-- FB -->
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="FRe7Euf0"></script>
+
+<!-- COLLAPSIBLE-->
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</html>

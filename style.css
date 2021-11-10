@@ -1,0 +1,358 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  h1,
+  h2 {
+    color: #60526C;
+    text-shadow: 1px 1px 2px lightgray;
+  }
+  
+  .text-content {
+    text-align: center;
+    color: white;
+    background: #2caae2;
+    padding: 30px 300px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    background-color: #D5BDD3;
+    padding: 20px 0;
+    
+  }
+
+  header nav a:active{
+    color: #60526C;
+  }
+  
+ .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+  }
+
+  .container-serv {
+    max-width: 900px;
+    margin: 44px auto;
+    padding: 0 15px;
+}
+
+    /*=======================================
+
+NAV BAR - Hamburger menu
+
+========================================*/
+
+.navbar {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 38px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+  /*=======================================
+
+  Home page 
+
+========================================*/
+
+.about1 {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  max-width: 1024px;  
+  margin: 0 auto;
+  text-align: center;
+  background-color: #D5BDD3;
+}
+
+.my-image {
+   width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.container-info {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.container-info img {
+    width: 100%;
+    text-align: center;
+}
+
+.container-info a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.container-info h3 {
+    padding: 0;
+}
+
+.container-info img {
+    width: 175px;
+    border-radius: 50%;
+    height: 175px;
+    object-fit: cover;
+    padding: 3px;
+    background: #333;
+}
+
+.btn {
+    text-align: center;
+    margin: 45px 0;
+}
+
+.btn a {
+    background: #D5BDD3;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+
+/*=======================================
+
+  About Us Page
+
+========================================*/
+.about2 {
+  padding-top: 2.5%;
+  padding: 2.5%;
+  max-width: 1024px;  
+  margin: 0 auto;
+  text-align: center;
+}
+
+.containerabout {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #D5BDD3;
+}
+
+.left-half,
+.right-half,
+.left-halfcontact {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+}
+
+.left-half img,
+.right-half img {
+padding: 20px;
+width: 90%;
+}
+
+.right-half,
+.left-half,
+.left-halfcontact {
+  vertical-align: top;
+  padding: 10px 30px;
+  display: inline;
+}
+
+/*=======================================
+
+SERVICES
+
+========================================*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+
+/*CONTACT */
+
+
+/*=======================================
+
+Footer
+
+========================================*/  
+  
+  footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #60526C;
+    color: white;
+  }
+
+  .containerabout {
+    padding: 30px;
+  }
+
+  .about2, .about1 {
+
+    padding: 30px;
+  }
+
+  @media (min-width: 960px) {
+      .container-info {
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+    }
+    .left-half, .right-half {
+      display: inline-block;
+    }
+    
+
+  .about1 {
+    max-width: 1024px;  
+    margin: 0 auto;
+    text-align: center;
+    background-color: #D5BDD3;
+  }
+
+}
+  

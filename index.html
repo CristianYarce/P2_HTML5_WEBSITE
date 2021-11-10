@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truvy Salon and Spa</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@100&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+            crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="index.html" class="logo">Truvy Salon and Spa</a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="index.html" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-links">About Us</a>
+          </li>
+          <li>
+            <a href="services.html" class="nav-links">Services</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <br> <br>
+        <br> <br>
+        <img class="my-image" src="images/hairpic.jpg" alt="woman " />
+
+        <section id="about" class="about1">
+        <h2>Welcome</h2>
+        <p>
+            Our central Saint Petersburg location is convenient to the greater Tampa Bay and gulf coast region of Florida.
+            We take great pride in providing our customers the finest hair care services possible.
+            Our accomplished hair stylists are expert in the current trends and modern fashions of the day, while maintaining exceptional consistency with the time-honored traditional hairstyles of beauty salons past.
+            <br><br>
+            If you are looking for a shiny new cutting edge (pun intended) hairstyle or hair color, a simple haircut, highlights or a retro perm from the fifties, Truvy Salon will manage all your beauty salon needs!
+            If you are looking for a high-end hair salon without the upscale pricing, try Truvy!
+
+        </p>
+
+      </section>
+
+      <div class="container">
+        <section class="sections">
+          <img class="my-image" src="images/girl.jpg" alt="woman hair salon" />
+
+          <h2>Reviews</h2><br>
+
+          <section class="container-info">
+              <img src="images/review1.jpg" alt="Nathaly Ray" width="100" height="100"/>
+              <h3>Nathaly Ray</h3>
+              <p>★★★★★</p><br>
+              <p>I was a little nervous to try out a new spot, but after reading some of the reviews I decided to give Truvy Salon a try. Chrissy is friendly and genuinely knows her stuff. (much appreciated, I barely know hair lingo) She took her time to understand me. </p>
+          </section>
+
+          <section class="container-info">
+              <img src="images/review2.jpg" alt="Robert Karl" width="100" height="100"/>
+              <h3>Robert Karl</h3>
+              <p>★★★★★</p><br>
+              <p>I had highlights and hair cut and style. I know the cut is perfect when I get home and do not feel the need to pickup scissors to fix little mistakes. I totally Loved the personal feel of the business. I highly recommend you check them out.
+              </p>
+          </section>
+
+          <section class="container-info">
+              <img src="images/review3.jpg" alt="Mayra Nunez" width="100" height="100"/>
+              <h3>Mayra Nunez</h3>
+              <p>★★★★★</p><br>
+              <p>I always get my hair done here. Chrissy Parker is the owner and she has done my hair for many years. She runs a great shop and always has fun. I highly recommend Truvy Hair Salon in St. Petersburg, Florida. Thank you so much!!!
+              </p>
+        </section>
+            <p class="btn"><a href="contact.html">Book an appointment!</a></p>
+          </section>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <section>
+      <div class="left-half">
+        <p>Truvy Salon and Spa<br>
+          8908 4th St. N., STE. B<br>
+          St. Petersburg, FL 33702 
+      </p>
+      </div>
+
+      <div class="right-half">
+        <p>
+          HOURS:<br>
+          Tues - Thur, 10am - 6pm<br>
+          Fri & Sat, 10am - 4pm
+        </p>
+      </div>
+      <P>Design by: Cristian Yarce</P>
+    </section>
+  </footer>
+<!-- Javascript -->
+<script id="rendered-js" >
+  let mainNav = document.getElementById("js-menu");
+  let navBarToggle = document.getElementById("js-navbar-toggle");
+  
+  navBarToggle.addEventListener("click", function () {
+    mainNav.classList.toggle("active");
+  });
+  //# sourceURL=pen.js
+  </script>
+</html>
